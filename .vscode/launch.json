@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Fianl Ex Launch",
+            "skipFiles": ["<node_internals>/**"],
+            "program": "${workspaceFolder}/dist/main.js"
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "Final Ex Attach",
+            "skipFiles": ["<node_internals>/**"],
+            "port": 9229
+        }
+    ]
+}

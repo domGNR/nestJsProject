@@ -1,0 +1,34 @@
+@host= http://localhost:3515
+@external = https://dummyjson.com/products
+###
+# check configuration
+###
+GET {{host}}
+Accept: application/json
+Content-Type: application/json
+
+
+###
+#
+###
+
+GET {{host}}/products/download/1
+Accept: application/json
+Content-Type: application/json
+
+###
+#
+###
+
+GET {{host}}/products/proc/1
+Accept: application/json
+Content-Type: application/json
+
+
+###
+#
+###
+
+GET {{external}}/1
+Accept: application/json
+Content-Type: application/json
